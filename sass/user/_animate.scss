@@ -1,0 +1,326 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+//定义浏览器的兼容最低版本
+$browser-minimum-versions:("ie":"8");
+/*-------------------------------------css--------------------------------------------*/
+// intro-left-arrow
+@mixin animate-desc-round () {
+  @include keyframes(desc-round){
+    0% {
+      @include prefixer(transform, scale(1));
+    }
+    50% {
+      @include prefixer(transform, scale(0.95));
+    }
+    100% {
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+// intro-right-arrow
+@mixin animate-intro-right-arrow () {
+  @include keyframes(intro-right-arrow){
+    0% {
+      opacity: 1;
+      left: 470px;
+    }
+    50% {
+      opacity: 0.5;
+      left: 480px;
+    }
+    100% {
+      opacity: 1;
+      left: 470px;
+    }
+  }
+}
+// intro_delta
+@mixin animate-intro_delta () {
+  @include keyframes(intro_delta){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(0));
+    }
+    50% {
+      opacity: 0.5;
+      @include prefixer(transform, scale(0.5));
+    }
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+// intro_des
+@mixin animate-intro_des () {
+  @include keyframes(intro_des){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(1.5));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+// guide_des
+@mixin animate-guide_des () {
+  @include keyframes(guide_des){
+    0% {
+      opacity: 0;
+      top:930px;
+      @include prefixer(transform, scale(1.5));
+    }
+
+    100% {
+      top: 815px;
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+// guide_tip
+@mixin animate-guide_tip () {
+  @include keyframes(guide_tip){
+    0% {
+      top: 600px;
+      opacity: 0;
+      @include prefixer(transform, scale(1.5));
+    }
+
+    100% {
+      top:694px;
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+// light_round
+@mixin animate_round () {
+  @include keyframes(round){
+    0% {
+      @include prefixer(transform, rotateZ(0deg));
+    }
+
+    100% {
+      @include prefixer(transform, rotateZ(360deg));
+    }
+  }
+}
+
+// dollars
+@mixin animate-dollars() {
+  @include keyframes(dollars){
+    0% {
+      @include prefixer(transform, rotateY(0deg));
+      opacity: 0;
+      @include prefixer(transform, scale(0));
+    }
+
+    100% {
+      @include prefixer(transform, rotateY(360deg));
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+// beaming_4
+@mixin animate-beaming_4() {
+  @include keyframes(beaming_4){
+    0% {
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+
+    25% {
+      opacity: 0.5;
+      @include prefixer(transform, scale(0.98));
+    }
+    50% {
+      opacity: 0.25;
+      @include prefixer(transform, scale(1));
+    }
+
+    75% {
+      opacity: 0.5;
+      @include prefixer(transform, scale(0.98));
+    }
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+@mixin animate-pieces_one_object() {
+  @include keyframes(pieces_one_object){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(0));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+@mixin animate-attention-set() {
+  @include keyframes(attention-set){
+    0% {
+      @include prefixer(transform, scale(1) translate(0px,0px));
+    }
+
+    100% {
+      @include prefixer(transform, scale(0.7) translate(-435px,0px));
+    }
+  }
+}
+
+
+@mixin animate_line() {
+  @include keyframes(line){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(1) translate(40px,-100px));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1) translate(0px,0px));
+    }
+  }
+}
+
+
+@mixin animate-success_con() {
+  @include keyframes(success_con){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(1.5) translate(0px,70px));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1) translate(0px,0px));
+    }
+  }
+}
+
+@mixin animate-pieces_three_object1() {
+  @include keyframes(pieces_three_object1){
+    0% {
+      opacity: 0;
+      @include prefixer(transform,perspective(600px) translateZ(100px));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, perspective(0px) translateZ(0px));
+    }
+  }
+}
+
+//finish_arrow
+@mixin animate-finish_arrow() {
+  @include keyframes(finish_arrow){
+    0% {top: 915px;}
+    25% {top: 920px;}
+    50% {top: 925px;}
+    75% {top: 920px;}
+    100% {top:915px;}
+  }
+}
+
+@mixin animate-finish_car() {
+  @include keyframes(finish_car){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(0.5) translate(900px,-400px));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1) translate(0px,0px));
+    }
+  }
+}
+@mixin animate-home_envelope() {
+  @include keyframes(home_envelope){
+    0% {
+      opacity: 0;
+     @include prefixer(transform, scale(0) translate(0px,-640px));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, scale(1) translate(0px,0px));
+    }
+  }
+}
+
+@mixin animate-home_shadow() {
+  @include keyframes(home_shadow){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, scale(1));
+    }
+
+    25% {
+      opacity: 0.25;
+      @include prefixer(transform, scale(0.9));
+    }
+    50% {
+      opacity: 0.5;
+      @include prefixer(transform, scale(1));
+    }
+
+    75% {
+      opacity: 0.25;
+      @include prefixer(transform, scale(0.9));
+    }
+    100% {
+      opacity: 0;
+      @include prefixer(transform, scale(1));
+    }
+  }
+}
+
+@mixin animate-home_light () {
+  @include keyframes(home_light){
+    0% {
+      opacity: 0;
+      @include prefixer(transform, rotateZ(0deg));
+    }
+
+    100% {
+      opacity: 1;
+      @include prefixer(transform, rotateZ(360deg));
+    }
+  }
+}
+
+@mixin animate-home_shade () {
+  @include keyframes(home_shade){
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}

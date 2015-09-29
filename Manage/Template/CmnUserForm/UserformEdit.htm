@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>字段管理</title>
+    <script type="text/javascript" src="../../../Js/jquery.js"></script>
+    <script type="text/javascript" src="../../../Js/jquery-ui.js"></script>
+    <script type="text/javascript" src="../../Js/SiteConfig.js"></script>
+    <script type="text/javascript" src="../../../Js/Cmn.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnAjax.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMis.js"></script>
+    <script src="../../../Js/CmnMis/CmnMisFrame.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMisControl.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMisItf.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMisFunc.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMisUserForm.js"></script>
+    <script type="text/javascript" src="../../../Js/CmnMis/CmnMisTableOpt.js"></script> 
+    <script type="text/javascript" src="../../../Js/CmnMisUI.js"></script>
+  
+    </head>
+<body>
+<table class="colList">
+    <thead>
+         <tr>
+             <td colspan="1"> <input class="colalign left" id="isshowlist" checked="checked"  type="checkbox" />只显示列表字段 </td>
+             <td colspan="8"><button class="saveBut">保存修改</button></td>
+        </tr>
+        <tr class="title">
+             <td>字段名</td>
+             <td>字段标题</td>
+             <td>显示位置</td>
+             <td>字段宽度</td>
+             <td>字段格式</td>
+             <td>在列表界面显示</td>
+             <td>在编辑界面显示</td>
+             <td>排序</td>
+             <td>操作</td>
+        </tr>
+    </thead>
+    <tbody id="colInfo">
+        <tr class="col" id="col_{userformcolid}">
+            <td><input type="text" class="colname dat-colname-value" value="字段名" /></td>
+            <td><input type="text" class="coltitle dat-coltitle-value" value="字段标题" /></td>
+            <td>
+                <input class="colalign left" type="radio" name="colalign_{userformcolid}" checked="" value="3" />
+                <label> 居左</label>
+                <input class="colalign center" type="radio" name="colalign_{userformcolid}" checked="checked" value="1" />
+                <label> 居中</label>
+                <input class="colalign right" type="radio" name="colalign_{userformcolid}" checked="" value="2" />
+                <label> 居右</label>
+            </td>
+            <td><input type="text" class="colwidth dat-colwidth-value rightInput" value="字段宽度" /></td>
+            <td><input type="text" class="colformat dat-colformat-value" value="字段格式" /></td>
+            <td><input type="checkbox" class="isshowlist dat-isshowingrid-value" value="1" /></td>
+            <td><input type="checkbox" class="isshowedit dat-isshowinedit-value" value="1" /></td>
+            <td><input type="text" class="sortid dat-sortid-value" value="排序" /></td>
+            <td>
+                <button class="removeCol" data-key="{userformcolid}">删除</button>
+                <button class="controlCfgBut" data-key="{userformcolid}">控件配置<span class="controlcfg" style="display:none;" default="{default_value}">{controlcfg}</span></button>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot id="newCols">
+        <tr class="newCol">
+             <td><input type="text" class="colname" value="" /></td>
+             <td><input type="text" class="coltitle" value="" /></td>
+             <td>
+                    <input class="colalign left" type="radio" name="" checked=" "  value="3" ></input>
+                    <label> 居左</label>
+                    <input class="colalign center" type="radio" checked="checked" value="1" ></input>
+                    <label> 居中</label>
+                    <input class="colalign right" type="radio" value="2" checked=" "></input>
+                    <label> 居右</label>
+            </td>
+             <td><input type="text" class="colwidth rightInput" value="50" /></td>
+             <td><input type="text" class="colformat" value="字段格式"/></td>
+             <td><input type="checkbox" class="isshowlist isshowingrid" value="1" checked="checked"/></td>
+             <td><input type="checkbox" class="isshowedit isshowinedit" value="1" checked="checked"/></td>
+             <td><input type="text" class="sortid"  value="排序"/></td>
+             <td><button id="addCol">添加</button></td></td>
+        </tr>
+         <tr>
+             <td colspan="9"><button class="saveBut">保存修改</button></td>
+        </tr>
+    </tfoot>
+</table>
+    
+<style type="text/css">
+    .colList{width:100%;height:auto;text-align:center ; }
+    .colList td{padding:5px;}
+    .colList tbody td , tfoot td{font-size:12px;}
+    .colList tbody tr{border:1px #000 solid;}
+    .colList tbody tr:hover{ background: #e9e3e3;}
+    .colList thead, tfoot td{ background: rgba(120, 182, 240, 0.84);color:#000;}
+    .colList .colalign ,.colList .isshowedit,.colList .isshowlist{text-align:center ;width:15px;}
+    .colList .sortid{ width: 50px; }
+    .rightInput {  text-align:right;width: 50px;   }
+    .title { font-weight:bold; font-size:12px;}
+    .saveBut { width: 100px; height: 40px;  }
+    .dialog{text-align:center;display:none;width:600px;height:500px; background:#fff; }
+    .dialog .con { margin:10px; height:400px;overflow:auto;}
+    .dialog .tit { margin:10px; height:30px; line-height:30px; font-weight:bold; font-size:16px;}
+    .dialog .footer { height:20px;}
+    .dialog .footer button { margin:10px;}
+    .confirm { width:300px; height:150px; background:#fff;  text-align:center;display:none; }
+    .confirm .con { margin:10px; height:50px;}
+    #controlCfg-dialog .con{ text-align:left}
+</style>
+<div id="dialog" class="dialog">
+    <div class="con">暂时没有修改的记录</div>
+</div>
+<div class="confirm dialog alert">
+    <div class="tit">系统提示</div>
+    <div class="con"></div>
+    <div class="footer"><button class="is-ok">确认</button><button class="is-close">取消</button></div>
+</div>
+<div id="controlCfg-dialog" class="dialog">
+    <div class="userfrom-control">
+         <div class="tit">控件配置</div>
+    <div class="con cmn-EditPanel">
+
+        <div class="cmn-Ctl-Container" style="margin-top: 20px; height: 20px;">
+            <span class="cmn-Ctl-ColNameContainer" style="display: inline-block; width: 200px; text-align: right;">
+                <font color="red" class="cmn-Ctl-ColIsRequired"> * </font>
+                <label class="cmn-Ctl-ColName">控件类型名称 : </label>
+            </span>
+            <span style="display: inline-block; height: 20px; width: 250px; line-height: normal;" class="cmn-Ctl-Content cmn-control" data-control-type="Select" name="colcontroltypeid">
+                <select class="cmn-control-select controlType" style="width:250px;height:20px"></select>
+            </span>
+            <span class="cmn-Ctl-TipContainer" style="display: inline-block; margin-left: 20px;">
+                <span class="cmn-Ctl-VerifyContainer" style="display: none;">
+                    <label class="cmn-Ctl-VerifyRight" style="display: none; color: rgb(12, 170, 56);">×</label>
+                    <label class="cmn-Ctl-VerifyError" style="display: none; color: rgb(255, 0, 0);">√</label>
+                </span><span class="cmn-Ctl-TipDesc" style="display: none;"></span>
+            </span>
+        </div>
+        <br /><br /><br />
+
+       <span><b>配置信息------------------------------------------</b><font color="red">*</font>：</span>
+
+        <div class="cmn-Ctl-Container" style="margin-top: 20px; height: 100px;">
+            <span class="cmn-Ctl-ColNameContainer" style="display: inline-block; width: 200px; text-align: right;">
+                <font color="red" class="cmn-Ctl-ColIsRequired"> </font>
+                <label class="cmn-Ctl-ColName"></label>
+            </span>
+            <span style="display: inline-block; height: 100px; width: 250px; line-height: normal;" class="cmn-Ctl-Content cmn-control" data-control-type="TextArea" name="controlcfg">
+                <textarea class="cmn-control-textArea controlcfgval" style="width:300px;height:100px; font-size:12px;display:none"></textarea>
+            </span>
+            <span class="cmn-Ctl-TipContainer" style="display: inline-block; margin-left: 20px;">
+                <span class="cmn-Ctl-VerifyContainer" style="display: none;">
+                    <label class="cmn-Ctl-VerifyRight" style="display: none; color: rgb(12, 170, 56);">×</label>
+                    <label class="cmn-Ctl-VerifyError" style="display: none; color: rgb(255, 0, 0);">√</label>
+                </span><span class="cmn-Ctl-TipDesc" style="display: none;"></span>
+            </span>
+        </div>
+
+    </div>
+    <div class="footer"><button class="cfg-save">保存</button><button class="cfg-close">取消</button></div>
+    </div>
+</div>
+<script type="text/javascript">
+  
+    $(document).ready(function () {
+        
+        var _saveColArr = new Array();//保存的需要修改的字段dom index
+        var _beforVal = "";
+        var _colInfoJson = null;//存储字段信息
+        var addCount = 1;
+        var strReg = /^\w+$/;//监测非汉子字符
+        var numberReg = /^\d+$/;//非数字
+        var chinaLan = /^(\S|[\u4E00-\u9FA5])+$/;//汉子加字符
+        var NewColsInfo =new  Array();
+        setTimeout(function(){  init("isshowingrid = 1");  }, 1000);
+ 
+        var dialog = CmnMis.UI.ShowDialog()
+ 
+        $("#isshowlist").click(function(){
+            if ($(this).attr("checked") == "checked") {  init("isshowingrid = 1");
+            } else { init("");  }
+        });
+ 
+        //保存
+        $(".saveBut").click(function () { save();});
+ 
+        //删除
+        $(".removeCol").die().live("click", function () {
+            dialog.showConfirm("是否确认删除",
+                { selector: ".confirm", appendTo: ".con", close: ".is-close", confirm: ".is-ok" },
+                function () { alert("删除成功") }, function () { }).show();
+        });
+
+        function init(where) {
+            if (typeof where == "string" && where != "") { where = " and " + where; } else { where = ""; }
+            CmnAjax.FillData(".col", InterfaceUrl + "?method=GetRecList", "{'CurUserFormID':'2','Condition':'[userformid]=" +
+              Cmn.Func.GetParamFromUrl("UserFormID", window.location.href) + where + "','SortBy':'[sortid] asc , [userformcolid] asc'}", function (data) {
+
+                  $("input[type=checkbox]").click(function () {
+                      var val = $(this).val() == "0" ? 1 : 0;
+                      $(this).val(val);
+                  })
+ 
+                  $("#colInfo tr").find("td .sortid").each(function (index, item) {
+                      if ($.type($(item).val()) == "string" || $(item).val() == "" || $(item).val() == null) {
+                          $(item).val(index);
+                      }
+                  })
+
+                  //拖动排序
+                  $("#colInfo").sortable({
+                      opacity: 0.8, //设置拖动时候的透明度    
+                      cursor: 'move', //拖动的时候鼠标样式 
+                      stop: function (event, ui) { //完成拖动之后自动排序
+                          var _beforIndex = ui.item.find("td .sortid").val()== "" ? 0 : parseInt(ui.item.find("td .sortid").val());
+                          var _pos = $("#colInfo tr").index(ui.item);
+                          ui.item.find("td .sortid").val(_pos);
+                          saveAdd(_pos);
+                          if (_beforIndex >= _pos) {
+                              for (var _i = _pos + 1; _i < _colInfoJson.length; _i++) {
+                                  $("#colInfo tr").eq(_i).find("td .sortid").val(_i);
+                                  saveAdd(_i);
+                              }
+                          } else if (_beforIndex <= _pos) {
+                              for (var _i = _pos - 1 ; _i >= 0; _i--) {
+                                  $("#colInfo tr").eq(_i).find("td .sortid").val(_i);
+                                  saveAdd(_i);
+                              }
+                          }
+
+                      }
+                  });
+                   
+                  // $("#colInfo").sortable('refresh');
+                  // $("#colInfo").disableSelection();
+                  var _dataJson = data.data;
+                  _colInfoJson = _dataJson;
+                  $("#newCols .sortid").val(_colInfoJson.length);
+                  $("#newCols .colalign").attr("name", "colflign_", _colInfoJson.length);
+
+                  for (var _i = 0; _i < _dataJson.length; _i++) {
+                      var _id = _dataJson[_i].userformcolid;//字段id
+                      var _colalign = _dataJson[_i].colalign;//显示方式
+                      var _isshowlist = _dataJson[_i].isshowingrid;//显示是否显示列表界面
+                      var _isshowedit = _dataJson[_i].isshowinedit;//显示是否显示编辑界面
+
+                      //初始化显示方式
+                      $("#col_" + _id + " td .colalign").attr("checked", false);
+                      //显示是否显示列表界面
+                      if (_isshowlist == '1') {
+                          $("#col_" + _id + " td .isshowlist").attr("checked", "checked");
+                      }
+                      //显示是否显示编辑界面
+                      if (_isshowedit == '1') {
+                          $("#col_" + _id + " td .isshowedit").attr("checked", "checked");
+                      }
+                      //选中显示方式
+                      if (_colalign == '3') {
+                          $("#col_" + _id + " td .left").attr("checked", "checked");
+                      } else if (_colalign == '2') {
+                          $("#col_" + _id + " td .right").attr("checked", "checked");
+                      } else if (_colalign == '1') {
+                          $("#col_" + _id + " td .center").attr("checked", "checked");
+                      }
+                  }
+               
+
+                
+                  $("input").focus(function () {
+                      var type = $(this).attr("type");
+                      if (type == "text") {
+                          _beforVal = $(this).val();
+                      } else if (type == "radio") {
+                          if (!(typeof $(this).attr("checked") == String)) {
+                             
+                          }
+                      } else if (type == "checkbox") {
+                          _beforVal = $(this).attr("checked");
+                      }
+                  });
+                  $("input").blur(function () {
+                      var type = $(this).attr("type");
+                      if (type == "text") {
+                          if (_beforVal != $(this).val()) { saveAdd($("#colInfo tr").index($(this).parent("td").parent("tr"))); }
+                      } else if (type == "checkbox") {
+                          if (_beforVal != $(this).attr("checked")) { saveAdd($("#colInfo tr").index($(this).parent("td").parent("tr"))); }
+                      }
+                  });
+
+              });
+        }
+
+
+        //添加字段
+        $("#addCol").click(function () {
+         
+            var _colname = $(this).parent("td").parent("tr").find("td .colname").val()
+            var _coltitle = $(this).parent("td").parent("tr").find("td .coltitle").val();
+            var _colalign = $(this).parent("td").parent("tr").find("td input:checked.colalign").val();
+            var _colwidth = $(this).parent("td").parent("tr").find("td .colwidth").val();
+            var _colformat = $(this).parent("td").parent("tr").find("td .colformat").val();
+            var _isshowlist = $(this).parent("td").parent("tr").find("td .isshowlist").val();
+            var _isshowedit = $(this).parent("td").parent("tr").find("td .isshowedit").val();
+            var _sortid = $(this).parent("td").parent("tr").find("td .sortid").val();
+            if (_colname.match(strReg) == null || _coltitle.match(chinaLan) == null || _colwidth.match(numberReg) == null || _colformat.match(/\S/) == null || _sortid.match(numberReg) == null) {
+                Cmn.alert("输入违法请重新输入");
+                return;
+            }
+            var addList = {
+                colname: _colname,
+                coltitle: _coltitle,
+                colalign: _colalign,
+                colwidth: _colwidth,
+                colformat: _colformat,
+                isshowlist: _isshowlist,
+                isshowedit: _isshowedit,
+                sortid: _sortid,
+            }
+            NewColsInfo.push(addList);
+
+            var newColTr = $("" +
+             "<tr class=\"newCol\">" +
+             "<td><input type=\"text\" class=\"colname\" value=\"\" /></td>" +
+             "<td><input type=\"text\" class=\"coltitle\" value=\"\" /></td>" +
+             "<td>" +
+             "    <input class=\"colalign left\" type=\"radio\" name='colailgn_" + (_colInfoJson.length + addCount) + "'  value=\"3\" ></input>" +
+             "    <label> 居左</label>" +
+             "    <input class=\"colalign center\" type=\"radio\" name='colailgn_" + (_colInfoJson.length + addCount) + "' checked=\"checked\" value=\"1\" ></input>" +
+             "    <label> 居中</label>" +
+             "    <input class=\"colalign right\" type=\"radio\" name='colailgn_" + (_colInfoJson.length + addCount) + "' value=\"2\" ></input>" +
+             "    <label> 居左</label>" +
+             "</td>" +
+             "<td><input type=\"text\" class=\"colwidth\" value=\"50\" /></td>" +
+             "<td><input type=\"text\" class=\"colformat\" value=\"字段格式\"/></td>" +
+             "<td><input type=\"checkbox\" class=\"isshowlist dat-isshowingrid\" value=\"1\" checked=\"checked\"/></td>" +
+             "<td><input type=\"checkbox\" class=\"isshowedit dat-isshowinedit\" value=\"1\" checked=\"checked\"/></td>" +
+             "<td><input type=\"text\" class=\"dat-sortid-value\" style='width:50px;'  value=\"" + (_colInfoJson.length + addCount) + "\"/></td>" +
+             "<td class='addColBut'></td></td>" +
+             "</tr>" +
+                "");
+            $(this).parent("td").parent("tr").after(newColTr);
+            newColTr.children(".addColBut").eq(0).append($(this));
+            addCount++;
+
+        });
+
+
+        //
+        function save() {
+            var _totalCount = _saveColArr.length + NewColsInfo.length;
+            var _successCount = 0;
+            var _fail = "";
+            if (_colInfoJson == null) {
+                alert("数据发生异常:可能数据为空！");
+            } else {
+             
+                //更新数据
+                dialog.dialog("#dialog").show();
+              
+                for (var _i = 0; _i < $("#colInfo tr").size() ; _i++) {
+                    var recId = $("#colInfo tr").eq(_i).attr("id").match(/\d*$/);
+                    var _colname = $("#colInfo tr").eq(_i).find("td .colname").val();
+                    var _coltitle = $("#colInfo tr").eq(_i).find("td .coltitle").val();
+                    var _colalign = $("#colInfo tr").eq(_i).find("td input:checked.colalign").val();
+                    var _colwidth = $("#colInfo tr").eq(_i).find("td .colwidth").val();
+                    var _colformat = $("#colInfo tr").eq(_i).find("td .colformat").val();
+                    var _isshowlist = $("#colInfo tr").eq(_i).find("td .isshowlist").val();
+                    var _isshowedit = $("#colInfo tr").eq(_i).find("td .isshowedit").val();
+                    var _sortid = $("#colInfo tr").eq(_i).find("td .sortid").val();
+                        
+                    if (_colname.match(strReg) == null || _coltitle.match(chinaLan) == null || _colwidth.match(numberReg) == null || _colformat.match(/\S*$/) == null || _sortid.match(numberReg) == null) {
+                        _fail += "修改失败的字段：" + _colname + ";失败原因：录入的数据违法</br>";
+                        continue;
+                    } else {
+                        CmnAjax.PostData(InterfaceUrl + "?method=UpdateRec",
+                        "{'CurUserFormID':'2','RecID':'" + recId + "','colname':'" + _colname + "','coltitle':'" + _coltitle + "'," +
+                        "'colalign':'" + _colalign + "','colwidth':'" + _colwidth + "','colformat':'" + _colformat + "','isshowingrid':'" + _isshowlist + "'" +
+                        " ,'isshowinedit':'" + _isshowedit + "','sortid':'" + _sortid + "'}", function (d) {
+                            if (d.IsSuccess == '1') {
+                                _successCount++;
+                                $("#dialog .con").html("字段：" + _colname + "更新成功！</br>当前一共" + _totalCount + "条待处理数据！成功" + _successCount + "条！</br>---------------------------------------------：</br>" + _fail);
+                            } else {
+                                _fail += "修改失败的字段：" + _colname + ";失败原因：" + d.ErrMsg + "</br>"
+                            }
+                        });
+                    }
+                }
+                //添加数据
+                if (NewColsInfo.length != 0) {
+                    for (var _i = 0; _i < NewColsInfo.length; _i++) {
+             
+                        var _colname = NewColsInfo[_i].colname;
+                        var _coltitle = NewColsInfo[_i].coltitle;
+                        var _colalign = NewColsInfo[_i].colalign;
+                        var _colwidth = NewColsInfo[_i].colwidth;
+                        var _colformat = NewColsInfo[_i].colformat;
+                        var _isshowlist = NewColsInfo[_i].isshowlist;
+                        var _isshowedit = NewColsInfo[_i].isshowedit;
+                        var _sortid = NewColsInfo[_i].sortid;
+                        if (_colname.match(strReg) == null || _coltitle.match(chinaLan) == null || _colwidth.match(numberReg) == null || _colformat.match(/^\w?$/) == null || _sortid.match(numberReg) == null) {
+                            _fail += "添加失败的字段：第" + (_i+1) + "个;失败原因：录入的数据违法</br>";
+                            continue;
+                        }
+                        CmnAjax.PostData(InterfaceUrl + "?method=AddRec",
+                         "{'CurUserFormID':'216','colname':'" + _colname + "','coltitle':'" + _coltitle + "'," +
+                         "'colalign':'" + _colalign + "','colwidth':'" + _colwidth + "','colformat':'" + _colformat + "','isshowlist':'" + _isshowlist + "'" +
+                        " ,'isshowedit':'" + _isshowedit + "','sortid':'" + _sortid + "'}", function (d) {
+                            if (d.IsSuccess == '1') {
+                                _successCount++;
+                                $("#dialog .con").html("字段：" + _colname + "添加成功！</br>当前一共" + _totalCount + "待处理数据！成功" + _successCount + "条！</br>失败信息---------------------------------------------：</br>" + _fail);
+                            } else {
+                                _fail += "添加失败的字段：" + _colname + ";失败原因：" + d.ErrMsg + "</br>"
+                            }
+                        });
+
+                    }
+                }
+                _saveColArr = [];
+
+            }
+        }
+
+
+        //添加要修改的记录
+        function saveAdd(id) {
+            var _isAdd = true;
+            for (var _i = 0; _i < _saveColArr.length; _i++) {
+                if (id == _saveColArr[_i]) {
+                    _isAdd = false;
+                    return false;
+                }
+            }
+            if ((_saveColArr.length == 0 || _isAdd) && id >= 0) {
+                _saveColArr.push(id);
+            }
+        }
+
+
+
+        //控件配置-----------------------
+       
+        $(".colList").delegate(".controlCfgBut", "click", function () {
+            var _slef = this;
+            //获取需要编辑的控件对应的字段id
+            var _recId = $(_slef).attr("data-key");
+            //清空控件下拉框
+            $(".cmn-control-select").empty();
+
+            //初始化编辑界面
+            CmnMis.TableOpt.InitEidtPanel("cmn_usr_userformcol", ".userfrom-control", _recId);
+
+            $(".ControlCfgCol").remove();
+            setTimeout(function () {
+
+                var _controlCfg = $(_slef).find(".controlcfg").html();
+                if (typeof cfg == "string") { 
+                    _controlCfg = $.parseJSON(_controlCfg);
+                    _controlCfg = $.extend(_controlCfg.Default,{sqlDefault:$(_slef).find(".controlcfg").attr("default")||""});
+                }
+
+                //初始化空间配置
+                ControlCfgFunc.CreateToClass(".cmn-EditPanel", $(".controlType").val(), _controlCfg);
+            }, 500);
+
+            //显示浮层
+            dialog.dialog("#controlCfg-dialog", { close: '.cfg-close' }).show();
+
+            //保存
+            $(".cfg-save").unbind("click");
+            $(".cfg-save").bind("click", function () {
+                $(".controlcfgval").val(ControlCfgFunc.GetJsonStr());
+                $(".controlcfgval").html(ControlCfgFunc.GetJsonStr());
+                $(_slef).find(".controlcfg").html(ControlCfgFunc.GetJsonStr());
+                CmnMis.TableOpt.Update("cmn_usr_userformcol", _recId, function () {
+                    dialog.hide(function () { Cmn.alert("修改成功！") });
+                }, function () { dialog.hide(function () { Cmn.alert("修改失败！") }); });
+            })
+            
+            //控件选择框改变之后
+            $(".controlType").off("change").on("change", function () {
+                var _val = $(this).val();
+                if (!!_val) {
+                    $(".ControlCfgCol").remove();
+                    ControlCfgFunc.CreateToClass(".cmn-EditPanel", _val, $(_slef).find(".controlcfg").html());
+                }
+            });
+        });
+
+       
+
+        //添加项
+        $(".userfrom-control").delegate(".AddOptionListItem", "click", function () {
+            $(this).parent("div").find("ul").append('<li>key:<input type="text" class="key"style="width:100px;" />   value:<input type="text" style="width:100px;"  class="value" /></li>');
+        });
+
+    });
+
+
+    //控件配置界面生成类
+    var ControlCfgFunc = {
+        Type: {
+            TextArea: "textarea",
+            HasMap: "hasMap",
+            Text: "text",
+            Select:"select"
+        },
+        CreateToClass: function (selector, recid,controlCfg) {
+            /// <summary>添加控件配置界面</summary>
+            var _param = {
+                "CurUserFormID": "3",
+                "Condition": "[controltypeid]=1",
+                "SortBy": "[controltypeid] asc"
+            }
+
+            if (!!recid) { _param["Condition"] = "[controltypeid]=" + recid ;  }
+
+            CmnAjax.PostData(InterfaceUrl + "?method=GetRecList", _param, function (data) {
+
+                $(selector).append(ControlCfgFunc.GetCfgPanel(data.data[0] && data.data[0].controltypeparam));
+
+                ControlCfgFunc.SetControlValue(controlCfg);
+            });
+           
+        },
+        GetCfgPanel: function (cfg) {
+            /// <summary>生成控件配置界面</summary>
+            var _html = "";
+            if (!cfg) { return ""; }
+            if (typeof cfg == "string") { cfg = $.parseJSON(cfg); }
+
+            $.each(cfg, function (index, item) {
+                _html += ControlCfgFunc.GetControlHtml(index, item);
+            });
+
+            return _html;
+        },
+        GetControlHtml: function (key, cfg) {
+            /// <summary>生成控件配置界面每个小表单HTML</summary>
+            var _html = '';
+           
+            if (cfg.type == ControlCfgFunc.Type.TextArea) {
+                var _value = "";
+                if (!!cfg.val) { if (typeof cfg.val == "string") { _value = cfg.val;  }  }
+
+                _html = '<ul style="display: inline;"><textarea style="width:300px;height:100px; font-size:12px;" value="' + _value + '"></textarea></ul>';
+            }
+            else if (cfg.type == ControlCfgFunc.Type.HasMap) {
+                _html = '<ul style="display: inline;"></ul><button class="AddOptionListItem" style="margin-left: 40px;">添加</button></br>';
+            }
+
+            else if (cfg.type == ControlCfgFunc.Type.Text) {
+                var _value = "";
+                if (!!cfg.val) {
+                    if (typeof cfg.val == "string") {  _value = cfg.val;  }
+                }
+
+                var _tip = "";
+                if (!!cfg.sqlDefault) {
+                    if (typeof cfg.sqlDefault == "string") { _tip = "数据库默认值为：" + cfg.sqlDefault; }
+                }
+                _html = '<ul style="display: inline;"><input type="text" value="' + _value + '" /> ' + _tip + '</ul>';
+            }
+            else if (cfg.type == ControlCfgFunc.Type.Select) {
+                _html = '<ul style="display: inline;"> <select>';
+                if (!!cfg.val) {
+                    if (typeof cfg.val == "object") {
+                        $.each(cfg.val, function (index, item) {
+                            _html += "<option value='" + item.val + "'>" + item.key + "</option>";
+                        });
+                    }
+                }
+
+                _html += ' </select></ul>';
+            }
+          
+            return "<div style='margin-top: 10px;' class='ControlCfgCol' key= '" + key + "' type='" + cfg.type + "'><b>" + cfg.desc + "</b>:" + _html + "</div>";
+        },
+        GetJsonStr: function () {
+            /// <summary>获取控件配置的json字符串</summary>
+            var _json = "{";
+            $(".ControlCfgCol").each(function (index, item) {
+                var _delimiter = ",";
+                if (index == $(".ControlCfgCol").size() - 1) { _delimiter = ""; }
+                _json += '"' + $(item).attr("key") + '"' + ":" + ControlCfgFunc.GetControlValue($(item)) + _delimiter;
+            });
+
+            _json += "}";
+            return _json;
+        },
+        GetControlValue: function ($control) {
+            /// <summary>获取控件的值</summary>
+            var _val = '';
+            var _type = $control.attr("type");
+            if (_type == ControlCfgFunc.Type.TextArea) {
+                var _textarea = $control.find("textarea").val();
+                if (!_textarea) {
+                    _textarea = $control.find("textarea").html();
+                }
+
+                _val = '"' + _textarea + '"';
+            }
+            else if (_type == ControlCfgFunc.Type.HasMap) {
+                _val="["
+                $control.find("li").each(function (index,item) {
+                    var _delimiter = ",";
+                    if (index == $control.find("li").size() - 1) { _delimiter = ""; }
+                    _val += "{" + '"' + "key" + '":"' + $(item).find(".key").val() + '"' + ","+ '"' + "value" + '":"' + $(item).find(".value").val() + "\"}" + _delimiter;
+                })
+                _val += "]";
+            }
+            else if (_type == ControlCfgFunc.Type.Text) {
+                _val = '"' + $control.find("input").val() + '"';
+            }
+            else if (_type == ControlCfgFunc.Type.Select) {
+                _val = '"' + $control.find("select").val() + '"';
+            }
+            return _val;
+
+        },
+        SetControlValue: function (cfg) {
+            if (!cfg) { return ""; }
+            if (typeof cfg == "string") { cfg = JSON.parse(cfg); }
+            $(".ControlCfgCol").each(function (index, item) {
+                if ($(item).attr("type") == ControlCfgFunc.Type.Text) {
+                    $(item).find("input").val(cfg[$(item).attr("key")]);
+                }
+                else if ($(item).attr("type") == ControlCfgFunc.Type.TextArea) {
+                    $(item).find("textarea").val(cfg[$(item).attr("key")]);
+                }
+                else if ($(item).attr("type") == ControlCfgFunc.Type.Select) {
+                    $(item).find("select").html(cfg[$(item).attr("key")]);
+                }
+                else if ($(item).attr("type") == ControlCfgFunc.Type.HasMap) {
+                    if (typeof cfg[$(item).attr("key")] == "object") {
+                        $.each(cfg[$(item).attr("key")], function (index,val) {
+                            $(item).find("ul").append($('<li>key:<input type="text" class="key"style="width:100px" value="' + val.key + '" />   value:<input type="text" value="' + val.value + '" style="width:100px;"  class="value" /></li>'));
+                        })
+                    }
+                }
+            })
+        }
+
+    }
+
+
+    </script>
+</body>
+</html>

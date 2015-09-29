@@ -1,0 +1,51 @@
+@charset "UTF-8";
+// carousel scss
+//-----------------------------------------------------
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+@import "tobe/core/css3";
+//变量
+//---------------------------------
+$carouselBoxWidth:       600px !default;//外层大小（宽度）
+$carouselBoxHeight:      400px !default;//外层大小（高度）
+$carouselWidth:          400px !default;//视窗大小（宽度）
+$carouselHeight:         200px !default;//视窗大小（高度）
+$carouselLiGutter:      20px !default;//li间距
+$carouselItemNums:      5 !default;//总共多少图片
+$carouselImg:           168px 150px !default;//图片大小，第一个为宽度，第二个为高度
+//$carouselNavTextColor:  $primary darken($primary,5%) !default;//前、后导航按钮文本颜色，第一个为默认的，第二个鼠标滑过的
+$carouselNavSize:       40px !default;//前、后导航按钮宽度
+$carouselArrowHeight:         30px !default;//轮播箭头的高
+$carouselArrowWidth:         30px !default;//轮播箭头的宽
+$carouselClickWidth:         10px !default;//轮播点击切换点的大小
+$carouselClickTop:         $carouselHeight+50px !default;//轮播点击切换点距离顶部的距离
+$carouselClickGutter:      20px !default;//轮播点击切换点间距
+$carouselClickBoxWidth:    ($carouselClickWidth*$carouselItemNums)+($carouselItemNums*$carouselClickGutter) !default;//轮播点击切换点的总宽度
+$carouselClickBorder:      2px !default;//轮播点击切换点的边框
+$carouselClickSetWidth:    $carouselClickWidth+($carouselClickBorder*2) !default;//轮播点击切换点的选中以后的宽度
+
+
+//轮播
+.carousel_box{height:$carouselBoxHeight;width:$carouselBoxWidth;
+  .carousel_sidebar{height:$carouselHeight;width:$carouselWidth;position:relative;overflow:hidden;
+    .carousel_nav{height:$Height;width:$Width;@include legacy-pie-clearfix();position:relative;overflow:hidden;
+      li{height:$Height;width:$Width;@include float();
+        a{height:$Height;width:$Width;
+          img{width:$Width;}
+        }
+      }
+    }
+  }
+  .prev_btn{@include vertically-center(-($carouselArrowWidth*1.5),$carouselArrowHeight);
+    &:hover{@include opacity(0.5);}
+  }
+  .next_btn{@include vertically-center-right(-($carouselArrowWidth*1.5),$carouselArrowHeight);
+    &:hover{@include opacity(0.5);}
+  }
+  .carousel_click{@include horizontal-center($carouselClickTop,$carouselClickBoxWidth);text-align:center;font-size:0;
+    a{width:$carouselClickWidth;height:$carouselClickWidth;@include hide-text;@include prefixer(border-radius,50%);border:solid $carouselClickBorder $Color-White;margin-right:$carouselClickGutter;@include inline-block;}
+    a.carousel_set{background:$Color-Red;border:none;width:$carouselClickSetWidth;height:$carouselClickSetWidth;}
+  }
+}

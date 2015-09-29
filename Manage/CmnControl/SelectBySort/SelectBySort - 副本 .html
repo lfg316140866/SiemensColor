@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Css/reset.css" rel="stylesheet" />
+    <link href="Css/style.css" rel="stylesheet" />
+    <link href="Css/control.css" rel="stylesheet" />
+    <link href="Css/ThirdLib/themes/ui-lightness/jquery-ui.css" rel="stylesheet" />
+    <link href="Css/ThirdLib/themes/ui-lightness/jquery.ui.autocomplete.css" rel="stylesheet" />
+    <style>
+        /*根据类型选择列表*/
+        .SelectBYSortPopWrap {
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            background: url(Image/Public/BlackMask.png) repeat;
+            display: block;
+        }
+
+        .SelectBYSortPopInner {
+            min-width: 400px;
+            margin: auto;
+            position: relative;
+            height: auto;
+            top: 50%;
+            margin-top: -200px;
+            left: 0%;
+            background: #fff;
+            max-width: 500px;
+            padding-top: 10px;
+            border-radius: 10px;
+        }
+
+        .SelectBYSortSelectModuleWrap {
+            width: 90%;
+            position: relative;
+            margin: 1% auto;
+        }
+
+        .SelectBYSortSelectModuleList {
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            width: 90px;
+            position: relative;
+            border: 1px solid #e6e6e6;
+            cursor: pointer;
+            margin-right: 1%;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+            .SelectBYSortSelectModuleList select {
+                width: 100%;
+                padding: 5px 0px 3px 0px;
+                font-size: 14px;
+                color: #454545;
+            }
+
+        .FuzzySearchWrap {
+            width: 90%;
+            margin: auto;
+            position: relative;
+            margin-bottom: 1%;
+        }
+
+        .FuzzySearchList {
+            width: 90%;
+            height: 30px;
+            line-height: 30px;
+            font-size: 14px;
+            border: 1px solid #e6e6e6;
+            color: #454545;
+            display: inline-block;
+            *display: inline;
+            zoom: 1;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+            .FuzzySearchList input {
+                width: 100%;
+                height: 100%;
+                color: #454545;
+            }
+
+        .SelectBYSortPopWrap .MenuFunctionLoacitionWrapEditor {
+            border-top: 1px solid #e6e6e6;
+        }
+
+
+        /*对勾*/
+        .SelectBYSortPopWrap .SelectBYSortCheck {
+            cursor: pointer;
+            margin: auto;
+            height: 25px;
+            display: block;
+            width: 25px;
+            background: url(Image/check_icon.png) no-repeat;
+            background-color: #fff;
+            background-position: -25px 0;
+        }
+        .cmn-SelectBySort-OptionListItem {
+            cursor: pointer;
+        }
+        .cmn-Select BySort-OptionListItem:hover {
+            background: #b5b2af;
+        }
+        /*选中对勾*/
+        .SelectBYSortPopWrap .MenuFunctionLoacitionInner .SelectBYSortCheck.Select {
+            background-position: 0,0;
+        }
+    </style>
+</head>
+<body>
+
+    <!--根据类型选择列表-->
+    <div class="SelectBYSortPopWrap cmn-SelectBySort-Wrap">
+
+        <div class="SelectBYSortPopInner">
+
+            <!--下拉模块-->
+            <div class="SelectBYSortSelectModuleWrap cmn-SelectBySort-SortsWrap">
+                <!--下拉列表1-->
+                <div class="SelectBYSortSelectModuleList cmn-SelectBySort-Sort">
+                  <select> </select>
+                </div>
+
+            </div>
+
+            <!--模糊搜索-->
+            <div class="FuzzySearchWrap">
+                <div class="FuzzySearchList">
+                    <input class="cmn-SelectBySort-Input" type="text" value="搜索" />
+                </div>
+            </div>
+
+
+            <div class="MenuFunctionLoacitionWrap MenuFunctionLoacitionWrapEditor cmn-SelectBySort-OptionList" style="display:none;">
+
+                <div class="MenuFunctionLoacitionInner" style="height:82%;overflow-y:auto;">
+                    <table class="EditorTableTitle EditorTableTitle1" width="100%" border="0" align="center" cellspacing="1">
+                        <tbody>
+                            <tr class="MenuFunctionLoacitionListTitle cmn-SelectBySort-OptionListItem">
+                                <td class="W60" style="width: 30px;"><span class="SelectBYSortCheck Select"></span></td>
+                                <td class="W80 cmn-SelectBySort-OptionListItemText" style=" line-height: 25px;">no.1 - 懂星的天shisha</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div><!--MenuFunctionLoacitionInner_end-->
+
+                <div class="AddMenuBtn" style="position:relative;">
+                    <span>确认</span>
+                    <span>取消</span>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+</html>

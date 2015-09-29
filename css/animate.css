@@ -1,0 +1,38 @@
+﻿@keyframes FadeLeft {
+  0% {
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100% {
+   transform:translateX(0px);
+    opacity:1; }
+}
+@-moz-keyframes FadeLeft {
+  0% {
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100% {
+   transform:translateX(0px);
+    opacity:1; } }
+@-webkit-keyframes FadeLeft {
+  0% {
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100% {
+   transform:translateX(0px);
+    opacity:1; }}
+@-o-keyframes FadeLeft {
+  0% {
+    transform:translateX(-100px);
+    opacity:0;
+  }
+  100% {
+   transform:translateX(0px);
+    opacity:1; } 
+
+}
+.product-con-text2 {
+    -webkit-animation:FadeLeft 1500ms 0ms ease 1 both;
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+//-----------------------------------------------------	
+%wh100{width: 100%;height: 100%;}
+%scrolling{-webkit-overflow-scrolling: touch; -moz-overflow-scrolling: touch; -o-overflow-scrolling: touch;overflow-scrolling: touch}
+//定位(左对齐)
+@mixin position($top:0,$left:0,$position:absolute){
+  top:$top;
+  left:$left;
+  position: absolute;
+}
+
+@mixin position-box($top:0,$left:0,$bottom:null,$right:null) {
+  top:$top;
+  left:$left;
+  position:absolute;
+  bottom:$bottom;
+  right:$right;
+}
+
+//定位(右对齐)
+@mixin position-right($top:0,$right:0,$position:absolute){
+  top:$top;
+  right:$right;
+  position: absolute;
+}
+
+//Rolling container容器出滚动
+@mixin rolling-container($width,$height:auto){
+  overflow-x:hidden;
+  overflow-y:auto;
+  width:$width;
+  height:$height;
+  @include prefixer(overflow-scrolling,touch);
+}
+
+//字体样式
+@mixin font-style($font-size,$color,$background-color,$font-weight:normal){
+  font-size:$font-size;
+  line-height:1.5;
+  color:$color;
+  background-color:$background-color;
+  font-weight:$font-weight;
+}
+//select和input样式
+@mixin form-box($font-size,$height,$padding-left,$color){
+  border: none;
+  font-size: $font-size;
+  color: $color;
+  height: $height;
+  line-height: $height;
+  //background:transparent;
+  outline: none;
+  padding-left:$padding-left;
+  //@include prefixer(appearance,none);
+}
+
+
+//容器运用定位水平垂直居中
+@mixin horizontal-vertically-center($width,$height){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left:-($width/2);
+  margin-top: -($height/2);
+  width: $width;
+  height: $height;
+}
+//容器运用定位水平居中
+@mixin horizontal-center($top,$width){
+  position: absolute;
+  top: $top;
+  left: 50%;
+  margin-left:-($width/2);
+  width: $width;
+}
+
+//容器运用定位垂直居中
+@mixin vertically-center($left,$height){
+  position: absolute;
+  top: 50%;
+  left: $left;
+  margin-top:-($height/2);
+  height: $height;
+}
+
+//容器运用定位垂直居中(右)
+@mixin vertically-center-right($right,$height){
+  position: absolute;
+  top: 50%;
+  right:$right;
+  margin-top:-($height/2);
+  height: $height;
+}
+
+//背景图片
+@mixin bg-image($width, $height,$url,$repeat:no-repeat) {
+    width:$width;
+    height:$height;
+    background:image-url('#{$url}') $repeat;
+    background-size: $width $height;
+}
+
+//背景图片和定位
+@mixin bg-image-pos($width, $height,$url,$repeat:no-repeat,$position-x:0,$position-y:0) {
+  width:$width;
+  height:$height;
+  background:image-url('#{$url}') $repeat $position-x $position-y;
+  background-size: $width $height;
+}
+
+//浮层
+@mixin pop($pop-opacity,$display:none,$color-rgb:#000){
+  display: $display;
+  background:rgba($color-rgb,$pop-opacity);
+  z-index:99999;
+  @include stretch();
+  //background:image-url('pop/pop_bg.png') repeat!important;
+}
+
+//浮层手机版
+@mixin pop-mobile($pop-opacity,$display:none,$color-rgb:#000){
+  display: $display;
+  background:rgba($color-rgb,$pop-opacity);
+  z-index:99999;
+  @include stretch();
+}
+
+//透明背景
+@mixin transparent-background($pop-opacity,$color-rgb:#000){
+  background:rgba($color-rgb,$pop-opacity);
+  @if $lte7 {
+    background:$color-rgb;
+    filter:Alpha(opacity=$pop-opacity*100);  //
+    background: rgba($color-rgb,$pop-opacity);
+    *zoom:1; // 激活IE6、7的haslayout属性，让它读懂Alpha
+  }
+}
+
+//鼠标旋转
+@mixin animate-spin() {
+  @include keyframes(spin){
+    0% {
+      @include rotate(0deg);
+    }
+
+    100% {
+      @include rotate(180deg);
+    }
+  }
+  .spin {
+    @include animation-name(spin);
+    @extend %animated;
+  }
+}
+
+
+
+
+

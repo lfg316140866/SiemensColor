@@ -1,0 +1,954 @@
+/*******************************************************************************************************
+* DateTime: 2015-09-28 09:34:51		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 09:34:51		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:20:45		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:20:46		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:20:57		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:27:46		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:27:46		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:35:17		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:35:17		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:36:15		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:36:15		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:49:11		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 11:49:11		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 13:36:52		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 13:36:52		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:17:38		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:17:38		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:19:00		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:19:05		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=3&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:19:05		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=4&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:19:07		IP: 114.83.100.69Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=5&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:44:05		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:44:05		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:46		IP: 27.115.86.202Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:46		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=3&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=4&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=5&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=6&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=7&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:50		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=8&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=9&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=10&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=11&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=12&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=13&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:51		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=14&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:52		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=15&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:54:52		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=16&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:55:32		IP: 27.115.86.202Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 14:55:32		IP: 180.168.7.26Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 15:03:35		IP: 219.133.11.235Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 15:03:35		IP: 219.133.11.235Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 15:11:03		IP: 180.168.7.26Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:35:57		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:35:57		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:36:21		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:36:22		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:37:05		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:37:05		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2392.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:44:38		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:44:38		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:46:59		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:46:59		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 16:47:01		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:17:25		IP: 122.224.222.234Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:17:25		IP: 122.224.222.234Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:30:07		IP: 180.168.7.26Brower: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:30:08		IP: 27.115.86.202Brower: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:34:31		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:34:31		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:41:59		IP: 180.168.7.26Brower: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:41:59		IP: 27.115.86.202Brower: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:27		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:27		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:33		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:33		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:40		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:40		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:44		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:43:44		IP: 114.83.13.92Brower: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; Trident/4.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:44:58		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:44:58		IP: 116.246.18.247Brower: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Maxthon/4.4.6.2000 Chrome/30.0.1599.101 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:45:11		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:45:11		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:55:22		IP: 27.115.86.202Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:55:22		IP: 180.168.7.26Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/6.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:57:58		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:57:58		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:58:05		IP: 116.246.18.247Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/7.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 17:58:05		IP: 116.246.18.247Brower: Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/7.0)
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:06:55		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:06:55		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:33		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=UpdateRec
+execSql报错
+update cmn_usr_userformcol set  `sortid` = '1',cmn_modifydate=now(),cmn_lastuserid='50' where userformcolid={UserFormColID}
+-------------
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '}' at line 1
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:34:20		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:34:20		IP: 180.168.7.26Brower: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/600.8.9 (KHTML, like Gecko) Version/8.0.8 Safari/600.8.9
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:54:26		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:54:26		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 19:23:36		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 19:23:36		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:03		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:03		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:06		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:50		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:50		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=1&PageSize=16
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 20:33:54		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.157 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=GetSqlData&ItfName=get_story_list&CurPage=2&PageSize=24
+getFieldValue报错
+ select count(1) from (select story_id,story_title,story_pic,story_note,story_contents,story_id,is_show from bas_story) cmn_main_table 
+-------------
+Duplicate column name 'story_id'
+*******************************************************************************************************/
+

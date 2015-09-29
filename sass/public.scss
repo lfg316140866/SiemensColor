@@ -1,0 +1,130 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+
+/*********************顶部菜单************************/
+.navbar-logo{width:8%;}
+.online-purchase{margin-right:20px;width:7%;
+   li{margin-bottom:5px;
+     a{display:block;width:$Width;
+       img.h-btn{display:none;}
+     }
+     a:hover img.h-btn{display:block;}
+     a:hover img.none-btn{display:none;}
+   }
+}
+.navbar-header{
+  .navbar-toggle {background-color:rgba(0,0,0,0.6);
+    .icon-bar{background-color: $Color-White;}
+  }
+  .navbar-brand{padding:0;height:auto;margin-left:29px!important;width:$Width;
+  }
+}
+.nav-custom{padding-top:28px;padding-right:25px;
+  li{margin-left: 5px;
+    a{background:image-url('nav-bg.png') no-repeat;padding:9px 29px!important;color:$Color-White;
+      &:hover{background-position:-192px 0;background-color:transparent;}
+    }
+  }
+  li.first-li a{padding:9px 25px!important;background-position:-114px 0;
+      &:hover{background-position:-306px 0;}
+  }
+  li.select a{background-position:-192px 0;background-color:transparent;}
+  li.select.first-li a{background-position:-306px 0;}
+}
+
+
+/*********************底部菜单************************/
+.copyright{height:auto;text-align:center;background-color:$Color-Black;position:fixed;bottom:0;width:$Width;z-index:10;
+  p{line-height:33px;color:$Color-White;margin-right:10px;font-size:0.9em;}
+  .footer-bar{@include legacy-pie-clearfix;
+     li{@include float();}
+  }
+  .share-link{margin-top: 3px;
+    li{margin-left: 5px;}
+  }
+  .contact-us{
+    li{line-height:33px;margin:0 4px;color:$Color-White;
+      a{color:$Color-White;font-size:0.9em;}
+    }
+  }
+}
+
+
+/*********************loading************************/
+.wrap-load{display:block;position:fixed;top:0;left:0;@extend %wh100;background-image:image-url('loading-bg.jpg');z-index:10000;background-size:cover;overflow:hidden;
+   .inner-load{@include horizontal-center(24%,373px);height:284px;
+        .load-bar{@include position();}
+        .load-circle{@include position(8%,59%);@include animation(round 5000ms 0ms linear infinite both);@include animate_round();width:35%;}
+        .load-tip{@include position(88%,4%);width:90%;}
+        .load-title{@include position(64%,17%);width:72%;}
+        .load-box{@include position(98%,30%);
+          span{@include font-style(16px,$Color-White,null,600);
+             em{font-weight:600;}
+          }
+        }
+   }
+}
+.inner-load{}
+.joins-btn,.join-btn{position:absolute;bottom:33px;margin-left:-7.5%;width:15%;left:50%;
+  a{width:$Width;display:block;}
+}
+.two-code{width:15%;position:absolute;bottom:110px;display:none;margin-left:-7.5%;width:15%;left:50%;}
+.join-dz-btn{width:20%;}
+
+
+/*********************浮层************************/
+.pop-float{@include pop(0.8);
+   .activity-rule{display:block;position:absolute;bottom:650px;left:50%;margin-left:-432px;width:864px;
+      .ctivity-rule-bg{@include position();}
+      .close-float-btn{@include position-right(30px,30px);}
+   }
+}
+
+@include max-screen(1280px){
+   .inner-load{top:32%!important;}
+
+}
+/*********************当屏幕小于768px************************/
+@include max-screen(768px){
+  .row>div{padding:0px;}
+  .navbar{background:#000;}
+  .navbar-logo{width:auto;}
+  .nav-custom {padding:0;
+      li{width:114px;padding-bottom:5px;margin:auto;}
+      li:first-child{width:78px;}
+  }
+  .content{padding-bottom:80px;padding-top:50px;}
+  .copyright{
+    p{float:none!important;@include inline-block();vertical-align:text-bottom;font-size:0.7em;margin-right:0px;}
+    ul{float:none!important;
+      a{font-size:0.7em!important;}
+    }
+    .share-link{@include inline-block();}
+    .footer-bar,.footer-bar~p{margin-top:-20px!important;}
+    .contact-us{display:block;text-align: center;margin: 0 auto;
+       li{@include inline-block();float:none!important;}
+    }
+  }
+  .joins-btn{bottom:68%;width:30%;}
+  .two-code{bottom:150px;width:30%;}
+  .home-git{width:32%!important;top:55%!important;}
+  .video-box{top:38%!important;width:80%!important;margin-left:-40%!important;}
+  .navbar-collapse{box-shadow:none;}
+  .navbar-brand img{@include position(3px,10px);width:20%;}
+  .load-box i{margin-top:-5px;} 
+  .info-box{padding-top:12%!important;}
+  .product-con{opacity:1!important;}
+  .product-con-text2{margin-left:52%!important;}
+  .product-con-text3{margin-left:14%!important;}
+  .product-con-text4{margin-left:48%!important;}
+  .product-con-text5{margin-left:18%!important;}
+  .home-shadow{top:45%!important;}
+  .bg img{height:$Height!important;}
+  .carousel-bg{height:$Height;
+     img{height:$Height;}
+  }
+}

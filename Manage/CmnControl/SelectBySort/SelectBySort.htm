@@ -1,0 +1,163 @@
+﻿
+<style id="style_SelectBySort">
+
+    .cmn-SelectBySort-Wrap {
+        height: 35px;
+        width: 260px;
+        position: relative;
+    }
+
+    .cmn-SelectBySort-InputWrap {
+        width: 100%;
+        height: 98%;
+        background: #fff;
+        border: #DDD 1px solid;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cmn-SelectBySort-InputWrap input {
+        width: 80%;
+        height: 100%;
+        /*position: absolute;*/
+        left: 0px;
+        top: 0px;
+        /*z-index: 3;*/
+        border: none;
+        text-indent:10px;
+    }
+
+    .cmn-SelectBySort-InputWrap span {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        width: 14%;
+        height: 100%;
+        top: 0%;
+        right: 0%;
+        border-left: 1px solid #ccc;
+        position: absolute;
+        cursor: pointer;
+        z-index:3;
+    }
+    
+    .cmn-SelectBySort-InputWrap span b {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
+        top: 23%;
+        text-align: center;
+    }
+
+    .cmn-SelectBySort-FilterPanel {
+        width: 500px;
+        position: absolute;
+        top: 0px;
+        z-index: 3;
+        display: none;
+        background: #F4F4F4;
+        border: #DDD 1px solid;
+    }
+
+    .cmn-SelectBySort-FilterPanel span {
+        padding: 10px;
+        position: relative;
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        cursor: pointer;
+        white-space: nowrap;
+        -moz-transition: all .1s ease-in;
+        -webkit-transition: all .1s ease-in;
+        -o-transition: all .1s ease-in;
+        transition: all .1s ease-in;
+    }
+    .cmn-SelectBySort-FilterPanel span:hover, .cmn-SelectBySort-Content div:hover {
+        background: #E4E2E2;
+        color: #000;
+    }
+
+    .cmn-SelectBySort-ContentContainer {
+        width: 100%;
+        height: 100%;
+        background: #EDEDED;
+    }
+
+    .cmn-SelectBySort-Content {
+        width: 100%;
+        max-height: 400px;
+        padding: 10px 0px;
+        background: #EDEDED;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .cmn-SelectBySort-Content span {
+        padding: 10px 15px;
+        min-width: 125px;
+    }
+    .cmn-SelectBySort-Content div {
+        padding: 10px 15px;
+        cursor:pointer;
+    }
+    .cmn-SelectBySort-ContentTools, .cmn-SelectBySort-ContentPgn {
+        width: 100%;
+        padding-bottom: 5px;
+        background: #D0CFCF;
+    }
+    .cmn-SelectBySort-ContentPgn {
+        padding-bottom: 0px;
+        height:35px;
+        background: #D0CFCF;
+    }
+    .cmn-SelectBySort-ContentTools b {
+        display: inline-block;
+        height: 25px;
+        line-height: 25px;
+        padding: 5px;
+        margin-left: 5px;
+        margin-top: 3px;
+        background: #E0DDDD;
+        cursor:pointer;
+    }
+
+    .cmn-SelectBySort-ContentPgn b {
+        height: 35px;
+        display: inline-block;
+        text-align: center;
+        line-height: 35px;
+        cursor: pointer;
+        background: #BEBCBC;
+        padding: 0px 10px;
+    }
+
+</style>
+
+<div class="cmn-SelectBySort-Wrap">
+
+    <div class="cmn-SelectBySort-InputWrap">
+        <input type="text" class="cmn-SelectBySort-Input" style="width:80%" />
+        <span class="cmn-SelectBySort-FilterBtn"><b>筛选</b></span>
+    </div>
+
+    <div class="cmn-SelectBySort-FilterPanel">
+     
+        <div class="cmn-SelectBySort-ContentContainer">
+            <div class="cmn-SelectBySort-ContentTools">
+                <b recid="root" title="分类选择"> 分类选择 → </b>
+            </div>
+            <div class="cmn-SelectBySort-Content">
+               
+            </div>
+            <div class="cmn-SelectBySort-ContentPgn">
+                <b class="pagNext" style="float: right;">下一页</b>
+                <b class="pagPre" style="float: left;">上一页</b>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+

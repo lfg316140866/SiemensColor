@@ -1,0 +1,98 @@
+﻿<style>
+    /*************文件上传*************/
+
+    .cg-Ctl-FileUploadPublicBtn {
+        background-color: #fff;
+        display: inline-block;
+        height: 33px;
+        width: 110px;
+        line-height: 33px;
+        text-align: center;
+        color: #505050;
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        font-family: Arial,"微软雅黑";
+        padding: 0px;
+        font-size: 12px;
+        *display: inline;
+        *zoom: 1;
+    }
+
+    .cg-Ctl-SelectFileBtn {
+        display: block;
+    }
+
+    .cg-Ctl-FileViewContainer {
+        padding: 6px;
+        background-color: #fff;
+        position: absolute;
+        color: #505050;
+        border: 1px solid #e8e8e8;
+        border-radius: 3px;
+        text-align: left;
+        display: none;
+        top:0px;
+    }
+
+    .cg-Ctl-DelFileItemBtn {
+        cursor: pointer;
+        padding: 5px;
+        color:red;
+        font-size:18px;
+    }
+
+    .cg-Ctl-FilePreview {
+        color: #000;
+    }
+    .cg-Ctl-FilePreview img {
+        max-height: 50px;
+        max-width: 50px;
+    }
+    .cg-Ctl-FileSize {
+        color: #aaa8a8;
+    }
+
+    .cg-Ctl-ProgressContainer {
+        width: 100%;
+        background: #e8e8e8;
+        display: inline-block;
+        zoom: 1;
+        height: 5px;
+        font-size: 0px;
+        text-align: left;
+        *display: inline;
+        bottom: 0px;
+        left: 0px;
+        position:absolute;
+    }
+
+    .cg-Ctl-Progress {
+        width: 100%;
+        height: 100%;
+        background: #07b2f3;
+    }
+</style> 
+
+
+<div class="cmn-UploadFileContainer cg-Ctl-UploadFileContainer">
+
+    <div class="cmn-SelectFile cg-Ctl-FileUploadPublicBtn cg-Ctl-SelectFileBtn">选择文件</div>
+
+    <div class="cmn-FileViewContainer cg-Ctl-FileViewContainer" style="display:none;">
+
+        <div class="cmn-FileInfoItem cg-Ctl-FileInfoItem">
+            <span class="cmn-FileName cg-Ctl-FilePreview">jsd </span>
+            <span class="cmn-DelFileItemBtn cg-Ctl-DelFileItemBtn">×</span>
+
+            <div class="cmn-ProgressContainer cg-Ctl-ProgressContainer">
+                <div class="cmn-Progress cg-Ctl-Progress"></div>
+            </div>
+
+        </div>
+ 
+    </div>
+
+</div>

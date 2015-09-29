@@ -1,0 +1,1 @@
+﻿CmnMis_Version = "2.1", CmnMis = { CurUserForm: null, UI: null, Frame: null, Func: null, UserForm: null, TableOpt: null };

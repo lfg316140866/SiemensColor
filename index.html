@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>出彩，就现在</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/load.css" rel="stylesheet" />
+    <link href="css/reset.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/public.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <script src="Js/jquery-1.9.1.min.js"></script>
+    <script src="Js/Cmn.js"></script>
+    <script src="Js/CmnAjax.js"></script>
+    <script src="Js/CmnFuncExd.js"></script>
+    <script src="Js/Public.js"></script>
+    <script src="Js/SiteJs/SiteFunc.js"></script>
+    <!--[if lt IE 9]>
+      <script src="Js/html5.min.js"></script>
+      <script src="Js/respond.min.js"></script>
+      <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <script>
+        (function() {
+            var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
+            var i= e.length;
+            while (i--){
+                document.createElement(e[i])
+            }
+        })()
+    </script>
+    <![endif]-->
+    <script type="text/javascript">
+        function LoadAnimate() {
+            $(".home-git").delay(500).animate({ "left": "10%", "opacity": 1 }, 1500);
+            $(".home-tip").animate({ "left": "58%", "opacity": 1 }, 1500);
+        }
+        $(function () {
+            //BindDataStepLoad("get_story_list");
+            var _a = $(window).width() / $(window).height();
+            if (_a < 1.4) {
+                $(".home-bg .img-responsive").css("height", "97%");
+                $(".home-git").css("top", "28%");
+            }
+            SiteFunc.Share();
+        })
+    </script>
+</head>
+
+<body>
+    <style>
+        .home-light {position:absolute;left:0;top:5%;width:100%;height:100%;}
+        @media screen and (max-width: 1280px) {
+            .home-light{top: -7%;}
+            .home-git{top:30%;} 
+            .home-tip {top: 66%;}
+            .home-shadow{top:23%;}
+        }
+    </style>
+    <div class="wapper">
+        <div class="wrap-load">
+            <div class="inner-load">
+                <div class="load-circle"><img src="images/load-circle.png" alt="" class="img-responsive center-block"></div>
+                <div class="load-bar"><img src="images/load-bar.png" alt="" class="img-responsive center-block"></div>
+                <div class="load-title">
+                    <img style="position:absolute;" src="images/load-title1.png" alt="" class="img-responsive center-block">
+                    <img style="display:none;position:absolute;" src="images/load-title2.png" alt="" class="img-responsive center-block">
+                    <img style="display:none;position:absolute;" src="images/load-title3.png" alt="" class="img-responsive center-block">
+                </div>
+                <div class="load-tip">
+                    <img style="position:absolute;" src="images/load-tip1.png" alt="" class="img-responsive center-block">
+                    <img style="display:none;position:absolute;" src="images/load-tip2.png" alt="" class="img-responsive center-block">
+                    <img style="display:none;position:absolute;" src="images/load-tip3.png" alt="" class="img-responsive center-block">
+                </div>
+                <div class="load-box">
+                    <span>LOADING...<em id="counter">0%</em></span>
+                </div>
+            </div>
+        </div>
+        <header class="navbar navbar-fixed-top" style="position:absolute;">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header navbar-logo">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="javascript:void(0)"><img src="images/load.png" lazypath="images/logo.png" alt="" class="img-responsive"></a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <div class="online-purchase hidden-xs pull-right">
+                        <div class="home-line"><img src="images/load.png" lazypath="images/home-line.png" alt="" class="img-responsive center-block"></div>
+                        <ul>
+                            <li><a target="_blank" href="http://search.gome.com.cn/search?question=">
+                                <img src="images /load.png" lazypath="images/gome-btn.png" alt="" class="img-responsive none-btn">
+                                <img src="images /load.png" lazypath="images/gome-h-btn.png" alt="" class="img-responsive h-btn">
+                            </a></li>
+                            <li><a target="_blank" href="http://mall.jd.com/view_page-19443373.html">
+                                <img src="images/load.png" lazypath="images/jd-btn.png" alt="" class="img-responsive none-btn">
+                                <img src="images/load.png" lazypath="images/jd-h-btn.png" alt="" class="img-responsive h-btn">
+                            </a></li>
+                            <li><a target="_blank" href="http://product.suning.com/128818579.html">
+                                <img src="images/load.png" lazypath="images/sn-btn.png" alt="" class="img-responsive none-btn">
+                                <img src="images/load.png" lazypath="images/sn-h-btn.png" alt="" class="img-responsive h-btn">
+                            </a></li>
+                            <li><a target="_blank" href="https://siemens-home.tmall.com/category-535920001-878371689.htm?spm=a1z10.1-b.w5003-8028726875.15.RpiRjx&search=y&catName=%CF%B4%D2%C2%BB%FA&scene=taobao_shop#bd">
+                                <img src="images/load.png" lazypath="images/tm-btn.png" alt="" class="img-responsive none-btn">
+                                <img src="images/load.png" lazypath="images/tm-h-btn.png" alt="" class="img-responsive h-btn">
+                            </a></li>
+                        </ul>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right nav-custom">
+                        <li class="select first-li"><a href="index.html">首页</a></li>
+                        <li><a href="ColorDirt.html">出彩污渍</a></li>
+                        <li><a href="VideoAppreciation.html">视频欣赏</a></li>
+                        <li><a href="ColorMoment.html">出彩瞬间</a></li>
+                        <li><a href="ColorStory.html">出彩故事</a></li>
+                        <li><a href="ColorDeclaration.html">出彩宣言</a></li>
+                        <li><a href="ColorProduct.html">出彩产品</a></li>
+                    </ul>
+
+                </div>
+            <div style="display:none">
+                <img src="images/load.png" lazypath="images/carousel-img1.png">
+                <img src="images/load.png" lazypath="images/carousel-img2.png">
+                <img src="images/load.png" lazypath="images/carousel-img3.png">
+                <img src="images/load.png" lazypath="images/carousel-img4.png">
+                <img src="images/load.png" lazypath="images/story-bg.jpg">
+                <img src="images/load.png" lazypath="images/video-bg.jpg">
+                <img src="images/load.png" lazypath="images/con-box1.jpg">
+                <img src="images/load.png" lazypath="images/con-box2.jpg">
+                <img src="images/load.png" lazypath="images/con-box3.jpg">
+                <img src="images/load.png" lazypath="images/carousel-bg.jpg">
+            </div>
+                <!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </header>
+        <section class="content">
+            <div class="container-fluid container-inner">
+                <div class="home-shadow"><img src="images/load.png" lazypath="images/home-shadow.png" class="img-responsive" alt="" /></div>
+                <div class="home-bg bg"><img src="images/load.png" lazypath="images/home-bgnew.jpg" class="img-responsive" alt="" /></div>
+                <div class="home-light"><img style="height:100%" src="images/load.png" lazypath="images/light.png" class="img-responsive" alt="" /></div>
+                <div style="opacity: 0; left: 6%" class="home-git"><img src="images/load.png" lazypath="images/home-git.png" class="img-responsive" alt="" /></div>
+                <div style="opacity: 0; left: 67%" class="home-tip"><img src="images/load.png" lazypath="images/home-tip.png" class="img-responsive" alt="" /></div>
+            </div>
+        </section>
+        <footer class="copyright">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-4">
+                        <p class="pull-left share-text">分享到</p>
+                        <ul class="pull-left share-link footer-bar">
+                            <li><a id="sinaShare" target="_blank" href="javascript:void(0)"><img src="images/load.png" lazypath="images/share-btn1.png" alt="" /></a></li>
+                            <li><a id="qzoneShare" target="_blank " href="javascript:void(0)"><img src="images/load.png" lazypath="images/share-btn2.png" alt="" /></a></li>
+                            <li><a id="renrenShare" target="_blank" href="javascript:void(0)"><img src="images/load.png" lazypath="images/share-btn3.png" alt="" /></a></li>
+                            <li><a id="tenxunShare" target="_blank" href="javascript:void(0)"><img src="images/load.png" lazypath="images/share-btn4.png" alt="" /></a></li>
+                            <li><a id="doubanShare" target="_blank" href="javascript:void(0)"><img src="images/load.png" lazypath="images/share-btn5.png" alt="" /></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-9 col-md-9 col-lg-8">
+                        <ul class="pull-right footer-bar contact-us">
+                            <li><a target="_blank" href="http://www.siemens-home.cn/customer-service/contact">联系我们</a></li>
+                            <li>|</li>
+                            <li><a target="_blank" href="http://www.siemens-home.cn/privacy-policy">隐私保密规定</a></li>
+                            <li>|</li>
+                            <li><a target="_blank" href="http://www.siemens-home.cn/discover-siemens/company">使用条款</a></li>
+                        </ul>
+                        <p class="pull-right">&copy&nbsp;博西家用电器（中国）有限公司版权所有&nbsp;&nbsp;苏ICP备10003401号.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="modal fade" id="about">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">about</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>发你发快递分开过地方发发几个多个感觉到京东京东空旷的股护肤和股份的华国锋的法国恢复规划大发光火地方地方价格好地方建国后更好地设计稿哈打算地方你的</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">了解了</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <script src="Js/bootstrap.min.js"></script>
+        <script>
+            Cmn.Func.MobileAdaptive("", "", "images/AdviseVertical.png", Cmn.Func.MobileAdaptiveMode);
+        </script>
+    </div>
+</body>
+</html>

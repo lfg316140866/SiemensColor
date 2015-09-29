@@ -1,0 +1,12 @@
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:12		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=Login
+sql::select userid from cmn_usr_users where username = '李俊浩' and password='90b58287d96484fd9a33cc56d4e690a3'
+*******************************************************************************************************/
+
+/*******************************************************************************************************
+* DateTime: 2015-09-28 18:07:12		IP: 114.83.13.92Brower: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2515.0 Safari/537.36
+* Url : http://siemensf22.nn.cagoe.com/Itf/Php/AjaxItf.php?method=Login
+GetUserIDCacheKey::
+*******************************************************************************************************/
+

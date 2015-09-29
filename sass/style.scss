@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import "tobe/base";   //引入sass的tade模块
+@import "compass/typography";  //引入compasss五大模块
+@import "compass/css3";
+@import "compass/layout";
+@import "compass/support";
+// @import "compass/helpers";
+// @import "compass/tilities";
+
+/*-------------------------------------css--------------------------------------------*/
+html,body,.wapper,.bg,.container-inner{@extend %wh100;}
+.container-inner,.bg{@include position();overflow:hidden;}
+.bg img{position:relative;width:$Width;}
+.pt0{ padding:0px;}
+/*-------------------------------------首页--------------------------------------------*/
+.home-git{@include position(20%,10%);width:27%;}
+.home-tip{@include position(64%,58%);width:31%;z-index:2;}
+.home-shadow{@include position-right();width:58%;z-index:1;}
+
+/*-------------------------------------出彩污垢--------------------------------------------*/
+.icons-arrow{position:absolute;top:$Height/2;font-size:45px;left:$Width/2;width:18%;
+  .hover-arrow{display:none;}
+   &:hover .hover-arrow{display:block;}
+   &:hover .none-arrow{display:none;}
+}
+.carousel,.carousel-inner{height:$Height;}
+.carousel-indicators{bottom:15%!important;}
+
+/*-------------------------------------视频欣赏--------------------------------------------*/
+.video-box{@include horizontal-center(18%,61.5%);
+  video{@include position();@extend %wh100;}
+}
+.close-btn{@include position-right(0,-45px);display:none;}
+.windmills{position:absolute;bottom:2%;left:0;width:22%;}
+
+
+
+/*-------------------------------------出彩瞬间--------------------------------------------*/
+.carousel-bg{@include position();width:$Width;  }
+
+
+
+
+/*-------------------------------------出彩故事--------------------------------------------*/
+.smg-box{padding: 15px;background: image-url('shadow-bg.png') repeat;border:solid 1px #0083b6;cursor:pointer;margin-top: 15px;
+      h2{margin:10px 0px;@include font-style(1em,$Color-White,null);}
+      p{@include font-style(1em,$Color-White,null);}
+      &:hover{background:none;background-color:#048ccc;}
+}
+.info-box{@extend %wh100;background-image: image-url('story-bg.jpg');background-repeat:no-repeat;background-size:cover;padding-top:6%;margin:0;max-height:$Height;overflow-y:auto;overflow-x:hidden; @include prefixer(overflow-scrolling,touch);}
+
+
+
+/*-------------------------------------出彩宣言--------------------------------------------*/
+
+
+
+
+
+
+/*-------------------------------------出彩产品--------------------------------------------*/
+.product-container{background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.product-con1{background-image: image-url('con-box1.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box1.jpg',sizingMethod='scale');
+   .product-con-text1{margin-top:27%;margin-left:43%;width:37.5%;}
+   .product-btn{margin-left:43%;margin-top:0.5%;@include legacy-pie-clearfix;
+     a{@include float();width:31%;
+     }
+     a.buy-btn{width:35%;}
+   }
+  @at-root .mouse{margin-top:3%;margin-bottom:6%;
+     p{@include font-style(0.8em,$Color-White,null);}
+  }
+}
+.product-con2{background-image: image-url('con-box2.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box2.jpg',sizingMethod='scale');padding:0;
+  .product-con-text2{margin:10% 0 14% 52%;width:33%;}
+  .product-con-text3{margin:14% 0 20% 14%;width:26.5%;}
+}
+.product-con3{background-image: image-url('con-box3.jpg');filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box3.jpg',sizingMethod='scale');
+  .product-con-text4{margin:20% 0 0 48%;width:31.5%;}
+  .product-con-text5{margin:27% 0 28% 18%;width:42%;}
+}
+.mouse-des{visibility:hidden;}
+.mouse-box{position:fixed;bottom:7%;left:50%;margin:0%!important;margin-left:-63px!important;}

@@ -1,0 +1,198 @@
+@charset "UTF-8";
+html, body, .wapper, .bg, .container-inner, .video-box video, .info-box {
+  width: 100%;
+  height: 100%; }
+
+/*-------------------------------------css--------------------------------------------*/
+/*-------------------------------------css--------------------------------------------*/
+.container-inner, .bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden; }
+
+.bg img {
+  position: relative;
+  width: 100%; }
+
+.pt0 {
+  padding: 0px; }
+
+/*-------------------------------------首页--------------------------------------------*/
+.home-git {
+  top: 20%;
+  left: 10%;
+  position: absolute;
+  width: 27%; }
+
+.home-tip {
+  top: 64%;
+  left: 58%;
+  position: absolute;
+  width: 31%;
+  z-index: 2; }
+
+.home-shadow {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 58%;
+  z-index: 1; }
+
+/*-------------------------------------出彩污垢--------------------------------------------*/
+.icons-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 45px;
+  left: 50%;
+  width: 18%; }
+  .icons-arrow .hover-arrow {
+    display: none; }
+  .icons-arrow:hover .hover-arrow {
+    display: block; }
+  .icons-arrow:hover .none-arrow {
+    display: none; }
+
+.carousel, .carousel-inner {
+  height: 100%; }
+
+.carousel-indicators {
+  bottom: 15% !important; }
+
+/*-------------------------------------视频欣赏--------------------------------------------*/
+.video-box {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  margin-left: -30.75%;
+  width: 61.5%; }
+  .video-box video {
+    top: 0;
+    left: 0;
+    position: absolute; }
+
+.close-btn {
+  top: 0;
+  right: -45px;
+  position: absolute;
+  display: none; }
+
+.windmills {
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  width: 22%; }
+
+/*-------------------------------------出彩瞬间--------------------------------------------*/
+.carousel-bg {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%; }
+
+/*-------------------------------------出彩故事--------------------------------------------*/
+.smg-box {
+  padding: 15px;
+  background: url('../images/shadow-bg.png?1443478680') repeat;
+  border: solid 1px #0083b6;
+  cursor: pointer;
+  margin-top: 15px; }
+  .smg-box h2 {
+    margin: 10px 0px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: normal; }
+  .smg-box p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #fff;
+    font-weight: normal; }
+  .smg-box:hover {
+    background: none;
+    background-color: #048ccc; }
+
+.info-box {
+  background-image: url('../images/story-bg.jpg?1443478680');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 6%;
+  margin: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  -moz-overflow-scrolling: touch;
+  -ms-overflow-scrolling: touch;
+  overflow-scrolling: touch; }
+
+/*-------------------------------------出彩宣言--------------------------------------------*/
+/*-------------------------------------出彩产品--------------------------------------------*/
+.product-container {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.product-con1 {
+  background-image: url('../images/con-box1.jpg?1443478680');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box1.jpg',sizingMethod='scale'); }
+  .product-con1 .product-con-text1 {
+    margin-top: 27%;
+    margin-left: 43%;
+    width: 37.5%; }
+  .product-con1 .product-btn {
+    margin-left: 43%;
+    margin-top: 0.5%;
+    *zoom: 1; }
+    .product-con1 .product-btn:after {
+      content: "\0020";
+      display: block;
+      height: 0;
+      clear: both;
+      overflow: hidden;
+      visibility: hidden; }
+    .product-con1 .product-btn a {
+      float: left;
+      display: inline;
+      width: 31%; }
+    .product-con1 .product-btn a.buy-btn {
+      width: 35%; }
+  .mouse {
+    margin-top: 3%;
+    margin-bottom: 6%; }
+    .mouse p {
+      font-size: 0.8em;
+      line-height: 1.5;
+      color: #fff;
+      font-weight: normal; }
+
+.product-con2 {
+  background-image: url('../images/con-box2.jpg?1443478680');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box2.jpg',sizingMethod='scale');
+  padding: 0; }
+  .product-con2 .product-con-text2 {
+    margin: 10% 0 14% 52%;
+    width: 33%; }
+  .product-con2 .product-con-text3 {
+    margin: 14% 0 20% 14%;
+    width: 26.5%; }
+
+.product-con3 {
+  background-image: url('../images/con-box3.jpg?1443478680');
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/con-box3.jpg',sizingMethod='scale'); }
+  .product-con3 .product-con-text4 {
+    margin: 20% 0 0 48%;
+    width: 31.5%; }
+  .product-con3 .product-con-text5 {
+    margin: 27% 0 28% 18%;
+    width: 42%; }
+
+.mouse-des {
+  visibility: hidden; }
+
+.mouse-box {
+  position: fixed;
+  bottom: 7%;
+  left: 50%;
+  margin: 0% !important;
+  margin-left: -63px !important; }
